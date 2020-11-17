@@ -7,5 +7,6 @@ Out of the different implementation of the algorithm, this one follows almost en
 
 <div align="center"><img src="https://latex.codecogs.com/gif.latex?w_%7Bij%7D%28t%29%20%3D%20w_%7Bij%7D%28t%29%20&plus;%20%5Calpha%28t%29%20%5Ccdot%20h%28t%29%20%5Ccdot%20%7C%7Cx_%7Bci%7D%20-%20w_%7Bij%7D%28t%29%7C%7C"></div>
 
+where
 
-where ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20%5Csmall%20w_%7Bij%7D) is the ![equation](https://latex.codecogs.com/gif.latex?ij)-th entry of the weight matrix ![equation](https://latex.codecogs.com/gif.latex?W%28t%29), ![equation](https://latex.codecogs.com/gif.latex?t) is the current epoch, ![equation](https://latex.codecogs.com/gif.latex?%5Calpha%28t%29) the learning rate, ![equation](https://latex.codecogs.com/gif.latex?h%28t%29) is the neighborhood function, ![equation](https://latex.codecogs.com/gif.latex?x_c) the current randomly selected training vector.
+<div align="center"><img src="https://latex.codecogs.com/gif.latex?%5Cinline%20%5Calpha%28t%29%20%3D%20%5Calpha_0%20%5Ccdot%20%5Ctext%7Bexp%7D%5Cleft%28%20-%5Cfrac%7Bt%7D%7B%5Ctau_%7B%5Calpha%7D%7D%20%5Cright%29%2C%20%5Cquad%20h%28t%29%20%3D%20%5Ctext%7Bexp%7D%5Cleft%28%5Cfrac%7B%7C%7Cw_%7Bc%7D%20-%20w_%7Bi%7D%7C%7C%7D%7B2%5Csigma%28t%29%5E2%7D%20%5Cright%29%2C%20%5Cquad%20%5Csigma%28t%29%20%3D%20%5Csigma_0%20%5Ccdot%20%5Cleft%28%20-%5Cfrac%7Bt%7D%7B%5Ctau_%7B%5Csigma%7D%7D%20%5Cright%29"></div>
