@@ -1,5 +1,7 @@
 # Kohonen's Self-Organizing Map (SOM)
 
+## Background
+
 The original [paper](https://sci2s.ugr.es/keel/pdf/algorithm/articulo/1990-Kohonen-PIEEE.pdf) written by Teuvo Kohonen in 1990 was one of the first neural network model capable on unsupervised learning, training a set on initially randomized weight vectors.
 
 Out of the different implementation of the algorithm, this one follows almost entirely the original paper. The update function is defined as
