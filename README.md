@@ -1,5 +1,7 @@
 # Kohonen's Self-Organizing Map (SOM)
 
+![gif](https://github.com/nicomignoni/SOM/blob/master/animation/animation.gif)
+
 ## Background
 
 The original [paper](https://sci2s.ugr.es/keel/pdf/algorithm/articulo/1990-Kohonen-PIEEE.pdf) written by Teuvo Kohonen in 1990 was one of the first neural network model capable of unsupervised learning.
