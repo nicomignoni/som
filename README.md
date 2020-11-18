@@ -2,7 +2,7 @@
 
 ## Background
 
-The original [paper](https://sci2s.ugr.es/keel/pdf/algorithm/articulo/1990-Kohonen-PIEEE.pdf) written by Teuvo Kohonen in 1990 was one of the first neural network model capable on unsupervised learning, training a set on initially randomized weight vectors.
+The original [paper](https://sci2s.ugr.es/keel/pdf/algorithm/articulo/1990-Kohonen-PIEEE.pdf) written by Teuvo Kohonen in 1990 was one of the first neural network model capable of unsupervised learning.
 
 Out of the different implementations of the algorithm, this one follows almost entirely the original paper. The update function is defined as
 
@@ -16,3 +16,5 @@ where
 and ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20t) is the current epoch.
 
 Also, each neuron is connected to all the other ones, hence the map is a ![equation](https://latex.codecogs.com/gif.latex?K_p) complete graph, where ![equation](https://latex.codecogs.com/gif.latex?p) is the number of neurons. 
+
+## Example
