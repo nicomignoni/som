@@ -19,5 +19,5 @@ setuptools.setup(
     ],
     packages=setuptools.find_packages(),
     python_requires='>=3.6',
-    tests_require=["scikit-learn"]
+    extras_require={"test": ["scikit-learn"]}
 )
