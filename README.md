@@ -1,5 +1,7 @@
 # Kohonen's Self-Organizing Map (SOM)
 
+[![PyPI version shields.io](https://img.shields.io/pypi/v/kohonen-som.svg)](https://pypi.python.org/pypi/kohonen-som/)
+
 ![gif](https://github.com/nicomignoni/SOM/blob/master/animation/animation.gif)
 
 ## Installation
