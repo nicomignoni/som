@@ -4,7 +4,7 @@ from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
 import numpy as np
 
-from mapping import SOM
+from som.mapping import SOM
 
 dataset = load_iris()
 train = dataset.data
@@ -30,7 +30,7 @@ model = SOM()
 model.set_params(parameters)
 model.fit(train_pca)
 
-weights = model.weights
+weights = model.get_weights()
 
 # Plot the train dataset and the weights
 fig, ax = plt.subplots()

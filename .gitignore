@@ -1,5 +1,7 @@
-<<<<<<< HEAD
-__pycache__/ 
-=======
-
->>>>>>> ae1ed2d0971f1d65442983b2e36ec7068dd4f0ab
+test/__pycache__
+__pycache__ 
+run_test.sh
+build
+dist
+*.egg-info
+.pytest_cache
