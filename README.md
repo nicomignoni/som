@@ -15,16 +15,19 @@ The original [paper](https://sci2s.ugr.es/keel/pdf/algorithm/articulo/1990-Kohon
 
 Out of the different implementations of the algorithm, this one follows almost entirely the original paper. The update function is defined as
 
-
-<div align="center"><img src="https://latex.codecogs.com/gif.latex?w_%7Bij%7D%28t%29%20%3D%20w_%7Bij%7D%28t%29%20&plus;%20%5Calpha%28t%29%20%5Ccdot%20h%28t%29%20%5Ccdot%20%7C%7Cx_%7Bci%7D%20-%20w_%7Bij%7D%28t%29%7C%7C"></div>
+$$
+w_{ij}(t) = w_{ij}(t) + \alpha(t)h(t) \|x_{ci} - w_{ij}(t)\|
+$$
 
 where
 
-<div align="center"><img src=https://latex.codecogs.com/gif.latex?%5Cinline%20%5Cbegin%7Balign*%7D%20%5Cdisplaystyle%20%5Calpha%28t%29%20%3D%20%5Calpha_0%20%5Ccdot%20%5Ctext%7Bexp%7D%5Cleft%28%20-%5Cfrac%7Bt%7D%7B%5Ctau_%7B%5Calpha%7D%7D%20%5Cright%29%2C%20%5C%20h%28t%29%20%3D%20%5Ctext%7Bexp%7D%5Cleft%28-%5Cfrac%7B%7C%7Cw_%7Bc%7D%20-%20w_%7Bi%7D%7C%7C%5E2%7D%7B2%5Csigma%28t%29%5E2%7D%20%5Cright%29%2C%20%5C%20%5Csigma%28t%29%20%3D%20%5Csigma_0%20%5Ccdot%5Ctext%7Bexp%7D%20%5Cleft%28%20-%5Cfrac%7Bt%7D%7B%5Ctau_%7B%5Csigma%7D%7D%20%5Cright%29%20%5Cend%7Balign*%7D></div>
+$$
+\alpha(t) = \alpha_0 \exp\left( -\frac{t}{t_{\alpha}}\right), \ h(t) = \exp\left( -\frac{\|w_c - w_i\|^2}{2\sigma^2(t)} \right), \ \sigma(t) = \sigma_0 \exp\left( -\frac{t}{t_{\sigma}} \right) 
+$$
 
-and ![equation](https://latex.codecogs.com/gif.latex?%5Cinline%20t) is the current epoch.
+and $t$ is the current epoch.
 
-Also, each neuron is connected to all the other ones, hence the map is a ![equation](https://latex.codecogs.com/gif.latex?K_p) complete graph, where ![equation](https://latex.codecogs.com/gif.latex?p) is the number of neurons. 
+Also, each neuron is connected to all the other ones, hence the map is a $K_p$ complete graph, where $p$ is the number of neurons. 
 
 ## Example
 ```python
